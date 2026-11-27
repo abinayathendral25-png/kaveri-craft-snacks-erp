@@ -1,0 +1,206 @@
+
+/* ===== GLOBAL STYLES ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", serif;
+  background: #F7F2EA;
+  color: #352B2D;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* ===== COLOUR PALETTE ===== */
+
+:root {
+  --wine: #542D3A;
+  --terracotta: #A65F4B;
+  --ivory: #F7F2EA;
+  --champagne: #D9C5A5;
+  --dusty-rose: #C69A98;
+  --white: #FFFEFC;
+  --text: #352B2D;
+  --muted: #887A76;
+}
+
+/* ===== TOP HEADER ===== */
+
+.topbar {
+  height: 76px;
+  background: var(--white);
+  border-bottom: 1px solid #E9E0D7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 35px;
+}
+
+.brand {
+  color: var(--wine);
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* ===== MAIN LAYOUT ===== */
+
+.layout {
+  display: flex;
+  min-height: calc(100vh - 76px);
+}
+
+/* ===== SIDEBAR ===== */
+
+.sidebar {
+  width: 250px;
+  background: var(--wine);
+  padding: 30px 18px;
+}
+
+.sidebar h3 {
+  color: var(--champagne);
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin: 10px 12px 25px;
+}
+
+.menu-item {
+  padding: 14px 15px;
+  margin-bottom: 8px;
+  border-radius: 7px;
+  color: #F1E7E6;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.menu-item:hover {
+  background: #704654;
+}
+
+.menu-item.active {
+  background: var(--terracotta);
+  color: white;
+}
+
+/* ===== MAIN CONTENT ===== */
+
+.main-content {
+  flex: 1;
+  padding: 38px;
+}
+
+.page-title {
+  color: var(--wine);
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* ===== STATISTICS CARDS ===== */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  background: var(--white);
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #EAE1D8;
+  box-shadow: 0 4px 15px rgba(84, 45, 58, 0.04);
+}
+
+.stat-card p {
+  color: var(--muted);
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.stat-card h2 {
+  color: var(--wine);
+  font-size: 30px;
+}
+
+/* ===== CONTENT SECTIONS ===== */
+
+.section-card {
+  background: var(--white);
+  padding: 28px;
+  border-radius: 10px;
+  border: 1px solid #EAE1D8;
+  box-shadow: 0 4px 15px rgba(84, 45, 58, 0.04);
+}
+
+.section-card h2 {
+  color: var(--wine);
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+/* ===== PRODUCT LIST ===== */
+
+.product {
+  padding: 17px 0;
+  border-bottom: 1px solid #EEE7E0;
+}
+
+.product:last-child {
+  border-bottom: none;
+}
+
+.product h3 {
+  color: var(--wine);
+  font-size: 17px;
+  margin-bottom: 7px;
+}
+
+.product p {
+  color: var(--muted);
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 700px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .main-content {
+    padding: 22px;
+  }
+
+  .topbar {
+    padding: 0 20px;
+  }
+
+  .page-title {
+    font-size: 26px;
+  }
+}
