@@ -1,0 +1,12 @@
+{
+  "name": "order-to-audit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Order-to-Audit System for a Small South Indian Snack Manufacturer",
+  "scripts": {
+    "build": "npm --prefix frontend run build",
+    "start": "node backend/server.js",
+    "seed": "node database/seed.js",
+    "test": "npm --prefix backend test"
+  }
+}

@@ -1,0 +1,9 @@
+node_modules/
+frontend/dist/
+database/*.db
+database/*.db-wal
+database/*.db-shm
+.vscode/
+.env
+*.log
+.DS_Store
