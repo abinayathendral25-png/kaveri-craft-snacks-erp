@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Order-to-Audit System — Small Food Manufacturer (Kaveri Craft Snacks)
 
 An integrated **Order-to-Audit** prototype built for a small-scale South Indian snack manufacturer (murukku, mixture, chips, sweets). Every transaction is entered once at its source and flows automatically across **Sales Orders → Stock Checks → GST Tax Invoices → Dispatch → Payments** and **Raw Material Purchases → BOM Production Runs → Variance & FIFO Costing → Monthly Auditor Reports**.
@@ -133,3 +134,7 @@ All demo accounts use password **`demo123`** (also available as 1-click sign-in 
 - **Known Gaps:**
   - Customer-specific price lists are supported via Admin inline price editing on order approval rather than a separate customer-tier price table.
   - e-Invoice / e-Way Bill government API integration is not wired in this prototype.
+=======
+# kaveri-craft-snacks-erp
+A full-stack ERP application for small-scale food manufacturers to manage sales orders, GST invoicing, inventory, production tracking, material costing, and audit reports through an integrated system.
+>>>>>>> origin/main
